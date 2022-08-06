@@ -17,18 +17,18 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"222byang.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"222byang.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="2020未央计划，马昱春离散数学1于2022年暑假学习">
+  <meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="离散数学1学习笔记">
 <meta property="og:url" content="http://222byang.github.io/2022/08/05/21-57-30/index.html">
 <meta property="og:site_name" content="yang">
-<meta property="og:description" content="2020未央计划，马昱春离散数学1于2022年暑假学习">
+<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-08-05T13:57:30.000Z">
-<meta property="article:modified_time" content="2022-08-06T07:36:22.714Z">
+<meta property="article:modified_time" content="2022-08-06T09:45:30.050Z">
 <meta property="article:author" content="yang">
 <meta property="article:tag" content="note">
 <meta property="article:tag" content="离散数学1">
@@ -220,7 +220,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-08-06 15:36:22" itemprop="dateModified" datetime="2022-08-06T15:36:22+08:00">2022-08-06</time>
+                <time title="修改时间：2022-08-06 17:45:30" itemprop="dateModified" datetime="2022-08-06T17:45:30+08:00">2022-08-06</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -250,48 +250,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>2020未央计划，马昱春离散数学1<br>于2022年暑假学习<br><span id="more"></span></p>
-<h1 id="离散数学1"><a href="#离散数学1" class="headerlink" title="离散数学1"></a>离散数学1</h1><h2 id="命题逻辑的基本概念"><a href="#命题逻辑的基本概念" class="headerlink" title="命题逻辑的基本概念"></a>命题逻辑的基本概念</h2><h3 id="1-1-2"><a href="#1-1-2" class="headerlink" title="1.1~2"></a>1.1~2</h3><h4 id="命题"><a href="#命题" class="headerlink" title="命题"></a>命题</h4><ul>
-<li>命题<br>  非真即假<br>  T F 1 0 二值逻辑</li>
-<li>命题变项（变元）<br>  P、Q等</li>
-<li>简单命题和复合命题<br>  原子命题、分子命题<h4 id="命题连结词及真值表"><a href="#命题连结词及真值表" class="headerlink" title="命题连结词及真值表"></a>命题连结词及真值表</h4></li>
-<li>命题逻辑联结词<ul>
-<li>否定词$\neg$ <ul>
-<li>非P$\neg$P </li>
-<li>$\begin{bmatrix}<br>  P &amp;\neg P \\<br>  T &amp; F\\<br>  F &amp; T<br>  \end{bmatrix}$</li>
-</ul>
-</li>
-<li>合取词$\wedge$<ul>
-<li>P与Q  P,Q的合取</li>
-<li>$\begin{bmatrix}<br>  P &amp; Q&amp;P\wedge Q \\<br>  F &amp; F &amp; F\\<br>  F &amp; T&amp; F\\<br>  T &amp; F&amp; F\\<br>  T &amp; T&amp; T<br>  \end{bmatrix}$</li>
-</ul>
-</li>
-<li>析取词$\vee$<ul>
-<li>P或Q P,Q的析取</li>
-<li>$\begin{bmatrix}<br>  P &amp; Q&amp;P\vee Q \\<br>  F &amp; F &amp; F\\<br>  F &amp; T&amp; T\\<br>  T &amp; F&amp; T\\<br>  T &amp; T&amp; T<br>  \end{bmatrix}$</li>
-</ul>
-</li>
-<li>蕴涵词$\to$<ul>
-<li>P则Q P蕴涵Q 如果P那么Q</li>
-<li>P前件、前项、条件   Q后件、后项、结论</li>
-<li>$\begin{bmatrix}<br>  P &amp; Q&amp;P\to Q \\<br>  F &amp; F &amp; T\\<br>  F &amp; T&amp; T\\<br>  T &amp; F&amp; F\\<br>  T &amp; T&amp; T<br>  \end{bmatrix}$</li>
-<li>$P\to Q = \neg P \vee Q$</li>
-</ul>
-</li>
-<li>双条件词$\leftrightarrow $<ul>
-<li>P当且仅当Q P等价于Q</li>
-<li>$\begin{bmatrix}<br>  P &amp; Q&amp;P\leftrightarrow Q \\<br>  F &amp; F &amp; T\\<br>  F &amp; T&amp; F\\<br>  T &amp; F&amp; F\\<br>  T &amp; T&amp; T<br>  \end{bmatrix}$</li>
-<li>$(P\to Q)\wedge(Q\to P) = P \leftrightarrow Q$</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>联结词优先顺序<ul>
-<li>$() , \neg , \wedge , \vee , \to , \leftrightarrow$</li>
-</ul>
-</li>
-</ul>
-<h3 id="1-3合式公式及其赋值"><a href="#1-3合式公式及其赋值" class="headerlink" title="1.3合式公式及其赋值"></a>1.3合式公式及其赋值</h3>
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="4c156a90e4a1958c20bcdb9f0734d9f9e533b403b71b501bb0dd5e15eb955e4f">4630436162ade97ba2718b7d0c4b3b635624157d3dab1fc6c25cb9076a845540184ee8da7e9ae6a3fa620bdebf459982ec1118a692fbc8b59ecca9c6564f66c5075a3591ebc31a58032f541be0674b4f36831f942e20c43baa1149fc44412cb5845e805d27b5c5f80ce1643257cf88c6e2671816f6d03a0167e437ae6d10f2cebebf731bddebad02d4058973444bbb0c006388c47bd90382ef11dfebbdf74f2bd878b1b07c7e6d088c5416c811c21a2827abc0c44dabc01e2d777d4a6e7ead9107c4bbca441dce1db28aa480ac876b2ce90720644e1255c65d52cc276b3af36b22946086c65f37964bd733668299379e9d9cf064dcc8fc399578f167a406a5a092a018a82e6c243b65cb70b2f59d39dc8d061710b8deb7211b3183236b178fd870d8c84ca8ec47ccf296ca97776989de5dda51717672b15d4fd1907a84d9ec9467f878a89915422ce8dd54bda1847e4a7fff81d8ba150258706d4a1e041a6e3a20a276c676af66eaaa9c859758d94e937b428d923a14c9d9b219cf612853480e226acdbc3b8b3d23d7184b269288256f4464b59253d40985533397d4f8ee563f81a641d70bc04945d9893826a83ffb4fa08bc46135d18bd0900b36da81cc0b9116e0b34563a16d8d63277232f990316086630e377e3f54f91ed568417ad60eb3b606a7ab6a1aafae3274bd78c22936007bfde490857087bf649fc2289763a2eb486004cc3883e984ba21ac1995afbe410442cb5843a7038bb4b90b7bc24193ff33b97832f820bf830963975ce916884198bd52468e53fa11ea480298ccb3577453fa403b9efceedee5be31bdc2063045a665808c20efded91d3b262badd3e05d732c6379af42a37bb5879811233202788a029eccc61547fcf5c4830e07cb509ee0005bdc046edeb91e404b43811a91584a5b8975fc8c7d0853845fd9ef3a49a57c9d9faf5869483aad79ebf163dd13f05fd54770c1c1761a79e1060949ac762cfafa823c0dbf173838f6cbd5c89a4a023d3d23f9b49859d2616c7d66fc3f97c36bc73885d5018b201047bda0b694efdd0c5cd57dc7bd49122cda5ecd6f9af85e6d397c79f557522626701addc724318f40c5bf96c74353e60921d8f4beac13c95784c9819616c7d723f528c58a6934a1365cb7cf1ab155a24d1d5a45723fda29ce08891b4acdf29d1d6d74348867d32d38b2ef27089dfac1df1c7f6dceb9a35e24b38e9dd190ac1a39e92e25ec4795408364240b14170fad8e7157c124a61aa6f9e432b30d5f4e82c255914b52de07625d4dc5c75365f0017ebef16e6260881583dcd9a4b59d47a63aa8f140f8672ddf10bfc869be9f5b7ddcb115f3408421a1324801cf851a04e7419b0640fc9711fcaa9fe65372ef0afb3871a5ce8177baef37a2e4ff073eec1e43657bd241b153f7bdb69206a984aadc384d056875748d073cefee79de56e5153dd78c74267b0a50aef2cec71a8c8a6e14628ee41a5f7bf5a5391b7fc68216f7d2fe2f7f88b0344702442d84f4a1cc2abfd9fd327388866eb9d434e6b34ceec01ee9faac17926b95675b81491c5263e4933142c86953397d9aac996e6aa355de39d10e8edcf05d25b941783c2ebe07a35554cae7f77c313854cec070d4cfab822698a6ae26aa1dac4c6345c0f542700257b34d2b650497a77fbd6edf226ab1bab61a886b3c35e746ea951ab803552df915d10fea9c02ca6f73695b9cd63476b521691ea413eb995afe3ca75ea77f572912de37e843fa93a3701af47ce5aefe26eaa460e30fee9bdd1c1a4b7ff8dec6954381c8c8fa0ffc58ae13a2f8085470dcca6d47ebe6c982279d8b9106df79c24ae967fb652e1427e59ebab79058fde1610e1a500a7011a720c9c743b412e9df1bc9f381ef9dbf37e7ff54097d8ba8a6c67660ceed57092272e2651b7416b9cf36bf29b48fc8c93f1070990d314a8466f72a4509f5a90849e1d8f8cf402eeda3e6417fd1d14b86309f1a0b59c0808ebc3b374329f7ded6c017bcd1b7d7daf279eb0745bd9a9365f62ae4b54de8d7279fb57969f148bc853892a6f8f04a1944f2a54c783c63b2b538d3d85b2e59ba91037e10d0da7f7ce7022c9a7587c93642ebbf5271f2149ac347070f7a0dd95ca006837b0d54ebfcf575676eee683e2c255a4432820bf8b34e2ea3aa374040deb081eec60bdcfed152f64d6222fdd0f0de8da4fcbbfb1450acf9aa90c0f41aab7a619dfacf73b5a60e6f52eac624fcdcc39f1c08e144f76cc21d66d68b6c1a552ec7cde41601ccb14a6929a6f90e549920c6552ae08fc9cf0794d0fd718bac114e663d4f7899e3ddd1499acf9105e657eeebc4ac818875f6c88bc2b9f53fc98749e376e74db5decb3fbf7cbf3ff95b13a74e6fbe01f9a3c94d4ecaf01dadfba6aed2876c947d2d34b2d37474763b6332732d07d83c0fee11fe5cfffe1804d334f2b929f984c4f4ed5f387fa707ed166442c3946343e518df47f10da4a93761658e58f2be05a831b5cad378dbb903db0dece3077487680a6d624176983e7135e27546e857bd3ee3649512b50b1d9c64aca4d5113ed2db8e43dd0920401a0b6a599fadf5a53408a37fe42afbbde847b1136ebecf2fda5019f19648ba653a4abca0cfc509a0187a9bf944ef778da5409e9714684d203ca0ebba83fe2f95f782b67673de43e18fb67e9239272c8c9f2717c4871812f50e5bd2359dcb2d35b0e1693db4348fb21667fa4549399745571ff12f892b8c4bc6519049e067b1797283ceea102a2a4867b70ae633faeffc9cf1948ded89e83bea1a32bf5bfd89c62802fd9c97a374af6e8f67eb0d874deca543ce6a778badd759a10facba83b9521ced5ee1c0d07305b6cd6f60e1b80f4205f0570897a958e1b9a1740253eaf350ba56542fec77e0c707432829aa35c006b7e97f8fd50b0e080d1730fa387881cf75dd255bb2805b99252c9918d1e7cf08f12842d2239c707b485766f652abe7f0b1b30fd2eef696a428da16023cc19a4e9707f07d1a5c461f8ea2908e3cbeaf23a9cff3f761e23dbf4ba0005f5a7a2872db7f7e3165aa7ee353faace38e7590f5703ed4e9744d2e8e895b69a4846f130727a90e7d6c768d1ba1ada55fc285362743a7144bc8f788ac0cdff6654a7937ce109ee92e618ccc011692650b1df6b49eda7c66dfa3848539bcbbf1cfa5d31ab1686f5248d8a659ee45948f81cc4b0804e68ccb4c6d19200c10357b31124599f2e714e4295da514b15ad41be26bbc77ce8f1a01f94c949f47e122faffee21b1819847169121ac39a444795b1ce17b911000336c52f86d5eaa01365be8cab74deec9489570ea6f88e3201853b88f48695c1b2a2480283d4a71e77858e6bd038894c8b363cc8cd40db58baae433596d39a1070736dd59bae9d49c7115c0f1684270854124c5e405b69e1e1c1020fa729df0985f30aed2bb15f7e3d93c2250283282d671c4dc259dcc63d547f7bf30bf87de299d6a17cdf5db349ee641b2339159f64d66450bf2aabe505351dec403bedb72d422622041a3d94a3c381d2cb9f8862c6c9413d9d088266daaa8932555126b879963a443f35d296bdfe172e1bdaf764feb0adace0aecebe642bd55f014412b585820e0d09a91fbc6e92b4150eec4ef53de4ecf60747f4c30dbd092c0d2fad837f6c4cc7291a8a130f603fafb931ece718c9b9ca39abf90e1a3537b659aac25b99afde6eac08197c71a9751f2f3792e34a3ff00b776e3bbbabc3eeb0559b12705424f33edd997ac41babc853765417f99e6d5d6a199066984302119cdab227b90cf52cf7ace1033316cfef8604f2502dccf71fb355cb5cd919421c63b38cc0f445270cbc212e034be09a29810a1db22d0462c2bd470f989d8b3eb0fc758d953c110c9d74eb865a70802828656d1b8a223e9501f610588369b788c90e7c04cd369037caf5fbce9800421202e40dd30ab7cc3cd7801e70e05f8bc2d641b835401c62dfaca0d0de9359774b57b5eb9b03e187e384dba989194d750a05c2c8c4bb6</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
     </div>
 
     
@@ -372,7 +342,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A61"><span class="nav-number">1.</span> <span class="nav-text">离散数学1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">命题逻辑的基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-2"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1~2</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%91%BD%E9%A2%98"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">命题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%91%BD%E9%A2%98%E8%BF%9E%E7%BB%93%E8%AF%8D%E5%8F%8A%E7%9C%9F%E5%80%BC%E8%A1%A8"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">命题连结词及真值表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3%E5%90%88%E5%BC%8F%E5%85%AC%E5%BC%8F%E5%8F%8A%E5%85%B6%E8%B5%8B%E5%80%BC"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.3合式公式及其赋值</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -439,8 +408,11 @@
   </span>
   <span class="author" itemprop="copyrightHolder">yang</span>
 </div>
+
+<!--
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
+-->
 
         
 <div class="busuanzi-count">
