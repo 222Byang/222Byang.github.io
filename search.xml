@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>diary2208</title>
-    <url>/2022/08/06/21-31-30/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="d8041b927186bbb97cfa2580d8683693364e48c1b45e5d397c534eca47c2d9fe">5050ed565c4763c39de31fa76ca460ecb8ce8421319806dc5c7037a41978be7c97d0d70dc22ca50f9a3918e1d8d4eb35058b2c881226dbde7ba24450fe1ddf703700d7afaac9992625b4df679da135d73bf46180ec9291160b950060b50cfb0d31718606044f0ceb0c462673cd65e0acdb91c691eb12fc6f006ece569ece7ff685940b7c8b624c123e69daef6baadb9c06ea1066e4e49154d403d512ff593fcebeeee1e8651e3ef4c65e5a142cc1c4c0</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>diary</category>
-      </categories>
-      <tags>
-        <tag>diary</tag>
-        <tag>暑假</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/08/05/21-46-36/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -48,20 +25,36 @@
     <content><![CDATA[<p>硬设计划</p>
 <span id="more"></span>
 
-<h1 id="一个较为实用的旋钮"><a href="#一个较为实用的旋钮" class="headerlink" title="一个较为实用的旋钮"></a>一个较为实用的旋钮</h1><p>可能的一些功能</p>
-<ul>
+<h1 id="一个较为实用的旋钮"><a href="#一个较为实用的旋钮" class="headerlink" title="一个较为实用的旋钮"></a>一个较为实用的旋钮</h1><h2 id="可能的一些功能"><a href="#可能的一些功能" class="headerlink" title="可能的一些功能"></a>可能的一些功能</h2><ul>
 <li>旋钮</li>
 <li>屏幕</li>
 <li>红外控制空调</li>
-<li>蓝牙开关灯</li>
+<li>开关灯、门</li>
 <li>显示时间、天气</li>
 </ul>
-<p>一些参考项目</p>
-<ul>
+<h2 id="一些参考项目"><a href="#一些参考项目" class="headerlink" title="一些参考项目"></a>一些参考项目</h2><ul>
 <li>瀚文键盘开源项目，有旋钮<br><a href="https://github.com/peng-zhihui/HelloWord-Keyboard">https://github.com/peng-zhihui/HelloWord-Keyboard</a></li>
 <li>多功能透明显示屏桌面站，有天气显示、屏幕等<br><a href="https://github.com/peng-zhihui/HoloCubic">https://github.com/peng-zhihui/HoloCubic</a></li>
 <li>smartknob项目，但是这个项目的电机现在好像没货了<br><a href="https://github.com/scottbez1/smartknob">https://github.com/scottbez1/smartknob</a></li>
 <li>一个模仿上述项目的项目，思路好像和我们这个差不多（）<br><a href="https://gitee.com/wenzhengclub/super_knob">https://gitee.com/wenzhengclub/super_knob</a></li>
+</ul>
+<h2 id="实现方式调研："><a href="#实现方式调研：" class="headerlink" title="实现方式调研："></a>实现方式调研：</h2><ul>
+<li>外观：<br>类似万用表</li>
+<li>空调：<ol>
+<li>可以用红外解码模块（收发一体），避免繁琐的编码<br>即用解码模块直接读出每条命令的红外编码，存储后在使用时分别发送即可<br>问题在于不同的空调有不同的协议可能不行</li>
+<li>根据空调的牌子在网上具体搜一下</li>
+</ol>
+</li>
+<li>灯、门：<br>也可以红外遥控，但是外观比较难搞，而且听上去也比较简单，可以最后再做<br>目前的想法就是一个电机控制即可</li>
+<li>旋钮<br>键盘的：<ul>
+<li>键盘使用模块化设计，左侧的多功能场景交互模块可以替换成各种自定义组件，默认使用的是一个带电子墨水屏以及FOC力反馈旋钮的Dynamic组件</li>
+<li>Dynamic组件主控的STM32F4，这个是因为我手边这款芯片比较多，理论上可以替换为性价比更高的F1系列的，只要芯片具备一个高级定时器用于PWM生成、2个硬件SPI接口用于编码器和电子墨水屏通信、一个I2C接口用于OLED驱动，以及一个全速USB接口即可。</li>
+<li>HelloWord-Ctrl：左侧Dynamic组件的PCB，控制器为STM32F405，可以配合底座单独使用，提供FOC力反馈旋钮、电子墨水屏显示、OLED显示、RGB灯等功能。</li>
+<li>HelloWord-OLED：Dynamic组件上OLED屏幕的最小驱动电路以及转接板。</li>
+<li>电机的磁编码器芯片我是使用AS5047P，也是一款很常用性能很好的磁编码芯片，不过成本略高，我只是因为手边有所以选了这款，也是可以修改为其他更便宜的型号的比如MT6816等，当然也需要修改固件驱动代码。</li>
+<li>我使用的是一个2204的二手电机，不过这一款电机目前好像不太好买，大家可以选取类似尺寸的无刷电机替换，参数方面需要KV值低一些，最好200左右。电机需要手动在转子上安装一个径向充磁的永磁体用于编码器定位，不同型号的电机需要对FOC参数进行一些调整。<br>superknob:<br>比较详细的，使用了esp32，2804电机，platformIO平台</li>
+</ul>
+</li>
 </ul>
 ]]></content>
       <categories>
@@ -70,6 +63,29 @@
       <tags>
         <tag>work</tag>
         <tag>硬件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>diary2208</title>
+    <url>/2022/08/06/21-31-30/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="d8041b927186bbb97cfa2580d8683693364e48c1b45e5d397c534eca47c2d9fe">5050ed565c4763c39de31fa76ca460ecb8ce8421319806dc5c7037a41978be7c97d0d70dc22ca50f9a3918e1d8d4eb35058b2c881226dbde7ba24450fe1ddf703700d7afaac9992625b4df679da135d73bf46180ec9291160b950060b50cfb0d31718606044f0ceb0c462673cd65e0acdb91c691eb12fc6f006ece569ece7ff685940b7c8b624c123e69daef6baadb9c06ea1066e4e49154d403d512ff593fcebeeee1e8651e3ef4c65e5a142cc1c4c0</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>diary</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+        <tag>暑假</tag>
       </tags>
   </entry>
   <entry>
