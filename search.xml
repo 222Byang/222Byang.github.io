@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>diary2208</title>
+    <url>/2022/08/06/21-31-30/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="ef97a8a7dd776882011b55d1aa09f7502b964e2476aa5a8bb99ed0012d95295e">5050ed565c4763c39de31fa76ca460ecb8ce8421319806dc5c7037a41978be7c97d0d70dc22ca50f9a3918e1d8d4eb35058b2c881226dbde7ba24450fe1ddf703700d7afaac9992625b4df679da135d755e577e51aae932b07b15684f9d990dbdeafb0ec8cf3a8494f8a90057ab75de94fb4187e7845461716f8533352bfb4ed1c8f95ab386d83ddba3944f1a78ec95935abe96f257a0daeca5836fc476d7c595a439fdff569372c0af932314009ffba</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>diary</category>
+      </categories>
+      <tags>
+        <tag>diary</tag>
+        <tag>暑假</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>THUknob</title>
     <url>/2022/08/06/21-33-30/</url>
     <content><![CDATA[<p>硬设计划</p>
@@ -32,9 +55,19 @@
 <li>HelloWord-Ctrl：左侧Dynamic组件的PCB，控制器为STM32F405，可以配合底座单独使用，提供FOC力反馈旋钮、电子墨水屏显示、OLED显示、RGB灯等功能。</li>
 <li>HelloWord-OLED：Dynamic组件上OLED屏幕的最小驱动电路以及转接板。</li>
 <li>电机的磁编码器芯片我是使用AS5047P，也是一款很常用性能很好的磁编码芯片，不过成本略高，我只是因为手边有所以选了这款，也是可以修改为其他更便宜的型号的比如MT6816等，当然也需要修改固件驱动代码。</li>
-<li>我使用的是一个2204的二手电机，不过这一款电机目前好像不太好买，大家可以选取类似尺寸的无刷电机替换，参数方面需要KV值低一些，最好200左右。电机需要手动在转子上安装一个径向充磁的永磁体用于编码器定位，不同型号的电机需要对FOC参数进行一些调整。<br>superknob:<br>比较详细的，使用了esp32，2804电机，platformIO平台</li>
+<li>我使用的是一个2204的二手电机，不过这一款电机目前好像不太好买，大家可以选取类似尺寸的无刷电机替换，参数方面需要KV值低一些，最好200左右。电机需要手动在转子上安装一个径向充磁的永磁体用于编码器定位，不同型号的电机需要对FOC参数进行一些调整。</li>
 </ul>
 </li>
+<li>旋钮<br>superknob:<br>比较详细的，使用了esp32，2804电机，platformIO平台</li>
+</ul>
+<h2 id="计划及ddl"><a href="#计划及ddl" class="headerlink" title="计划及ddl"></a>计划及ddl</h2><ul>
+<li>环境搭建、开源项目阅读、确定总体方案8.15<br>非常重要，将原理、用到的东西都弄懂，确定所有要用的东西（包括硬件、软件的库），确定了之后就可以先完成那部分的购买、编写、测试<br>包括弄懂superknob，调研好空调、门、灯等要开发的东西，多想想还有什么可做<br>SuperKnobLite快速入门指导文档！<br><a href="https://www.wolai.com/wenzheng/h43LtQeN7APnX3r76qMzEm">https://www.wolai.com/wenzheng/h43LtQeN7APnX3r76qMzEm</a></li>
+<li>购买模块、PCB打样8.20前完成（到货），并且准备好demo测试程序</li>
+<li>8.25前完成基本的测试，类似于helloworld，即旋钮和屏幕两个核心功能的实现，失败的东西找出替代方案，并且开始软件的编写</li>
+<li>8.25-31完成软硬件编写、测试</li>
+<li>9月继续完善，增加功能，进行最后的包装等</li>
+<li>初赛9.4-5</li>
+<li>决赛夏季学期第十一周</li>
 </ul>
 ]]></content>
       <categories>
@@ -43,29 +76,6 @@
       <tags>
         <tag>work</tag>
         <tag>硬件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>diary2208</title>
-    <url>/2022/08/06/21-31-30/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="ef97a8a7dd776882011b55d1aa09f7502b964e2476aa5a8bb99ed0012d95295e">5050ed565c4763c39de31fa76ca460ecb8ce8421319806dc5c7037a41978be7c97d0d70dc22ca50f9a3918e1d8d4eb35058b2c881226dbde7ba24450fe1ddf703700d7afaac9992625b4df679da135d755e577e51aae932b07b15684f9d990dbdeafb0ec8cf3a8494f8a90057ab75de94fb4187e7845461716f8533352bfb4ed1c8f95ab386d83ddba3944f1a78ec95935abe96f257a0daeca5836fc476d7c595a439fdff569372c0af932314009ffba</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>diary</category>
-      </categories>
-      <tags>
-        <tag>diary</tag>
-        <tag>暑假</tag>
       </tags>
   </entry>
   <entry>
